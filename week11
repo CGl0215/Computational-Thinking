@@ -1,0 +1,94 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO+0ESMf0/Q3q0wHqK/bryd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/CGl0215/Computational-Thinking/blob/master/week11\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CYg3Zszfq7Mu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9351355b-16fc-43c4-951b-7d149a9eb0f7"
+      },
+      "source": [
+        "#商數餘數\n",
+        "##input\n",
+        "seat=int(input(\"enter a seat number?\"))\n",
+        "##process\n",
+        "group=(seat-1)//5+1\n",
+        "##output\n",
+        "print(\"group is\",group)\n",
+        "#四捨五入 無條件進位\n",
+        "import math\n",
+        "##input\n",
+        "seat=int(input(\"enter a seat number?\"))\n",
+        "##process\n",
+        "group=math.ceil(seat/5)\n",
+        "##output\n",
+        "print(\"group is\",group)\n",
+        "#聊天機器人自我介紹\n",
+        "print(\"哈囉,大家好。我叫Zyxo64,是一個聊天機器人。\")\n",
+        "hobby=\"我喜歡各種美食,很高興有機會來到世新大學,請大家多多指教。\"\n",
+        "print(hobby)\n",
+        "# 打招呼,取得對方名字\n",
+        "name = input(\"嗨!妳好,請問大名?: \")\n",
+        "print(\"我叫\", name)\n",
+        "print(\"你好\", name, \"很高興認識你\")\n",
+        "# 從使用者取得今年年份\n",
+        "year = input(\"請問一下今年是西元2020年,那是民國幾年呢? \")\n",
+        "print(\"對!應該沒錯,謝謝妳!\")\n",
+        "# 請使用者猜年齡\n",
+        "myage = int(input(\"再猜猜看我今年幾歲? \"))\n",
+        "print(\"哇!你好聰明,我今年的確\", myage)\n",
+        "# 計算聊天機器人滿100歲的年份\n",
+        "nyears = 100 - myage\n",
+        "print(\"我再\", nyears, \"年就滿100歲了。\")\n",
+        "print(\"到時候是西元\", int(year) + nyears + 1911, \"年\") # 將今年年份轉換為整數\n",
+        "# 食物話題\n",
+        "print(\"我喜歡巧克力,也喜歡嘗試各種新食物。\")\n",
+        "food = input(\"你呢。你最喜歡的食物是什麼?: \")\n",
+        "print(\"我也喜歡\", food)\n",
+        "question = \"你多久吃一次\" + food + \"?: \"\n",
+        "howoften = input(question)\n",
+        "print(\"真有趣。不知道這樣對健康好不好!\")\n",
+        "# 動物話題\n",
+        "animal = input(\"我最喜歡的動物是長頸鹿。你呢?; \")\n",
+        "print(\"我不喜歡\", animal)\n",
+        "print(\"不知道\", animal, \"喜不喜歡吃\", food, \"?\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "group is 4\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
